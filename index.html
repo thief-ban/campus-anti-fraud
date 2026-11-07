@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5efe3">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="清醒点 · 大学生防骗指南：拆穿 13 类校园高频骗局，提供可疑消息体检、3 分钟反诈自测和被骗后的紧急止损流程。">
+  <meta property="og:title" content="清醒点｜大学生防骗指南">
+  <meta property="og:description" content="别让骗子先毕业。拆穿校园高频骗局，测测你的清醒值。">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:site_name" content="清醒点">
+  <meta property="og:image" content="og-cover.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="清醒点 · 大学生防骗指南：别让骗子先毕业">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="清醒点｜大学生防骗指南">
+  <meta name="twitter:description" content="别让骗子先毕业。拆穿校园高频骗局，测测你的清醒值。">
+  <meta name="twitter:image" content="og-cover.png">
+  <meta name="twitter:image:alt" content="清醒点 · 大学生防骗指南：别让骗子先毕业">
+  <title>清醒点｜大学生防骗指南</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true">醒</span>
+        <span class="brand-text">
+          <strong>清醒点</strong>
+          <small>大学生防骗指南</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="主导航">
+        <a href="#scams">骗局图鉴</a>
+        <a href="#scanner">消息体检</a>
+        <a href="#quiz">反诈自测</a>
+        <a class="nav-emergency" href="#emergency"><span class="nav-alert-dot" aria-hidden="true"></span>紧急止损</a>
+      </nav>
+
+      <a class="header-cta header-cta-emergency" href="#emergency"><span class="cta-pulse" aria-hidden="true"></span>已转账？先止损 <span aria-hidden="true">→</span></a>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="打开导航菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"><span id="scrollBar"></span></div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow hero-eyebrow">
+            <span class="live-dot" aria-hidden="true"></span>
+            学长学姐写给同学的防骗手册 · v1.0
+          </p>
+          <h1 id="heroTitle">别让<br><span class="marker">骗子</span><br>先毕业。</h1>
+          <p class="hero-lede">从“兼职日结”到“注销校园贷”，骗子比你更懂大学生活。<br>这里有 <strong>13 类高频骗局</strong>、一个消息体检仪，和一套真出事时能救急的止损流程。</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#scams">拆穿骗局 <span aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost" href="#quiz">3 分钟自测 <span aria-hidden="true">↗</span></a>
+          </div>
+          <a class="hero-emergency" href="#emergency">
+            <span class="hero-emergency-icon" aria-hidden="true">!</span>
+            <span><strong>已经转账了？</strong> 先止付，再报警；别删记录、别拉黑对方。</span>
+            <span class="hero-emergency-arrow" aria-hidden="true">→</span>
+          </a>
+          <dl class="hero-stats">
+            <div><dt>13</dt><dd>类高频骗局</dd></div>
+            <div><dt>6</dt><dd>道保命自测</dd></div>
+            <div><dt>1</dt><dd>套止损流程</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero-visual" role="img" aria-label="示意图：冒充学长的兼职诈骗聊天，要求先垫付 299 元激活任务。">
+          <div class="hero-stamp" aria-hidden="true">保持<br>清醒</div>
+          <div class="sticker sticker-red" aria-hidden="true">不转账</div>
+          <div class="sticker sticker-blue" aria-hidden="true">不共享屏幕</div>
+
+          <div class="phone">
+            <div class="phone-speaker" aria-hidden="true"></div>
+            <div class="phone-screen">
+              <div class="chat-head">
+                <span class="chat-avatar" aria-hidden="true">学</span>
+                <div class="chat-person">
+                  <strong>“学长”兼职内推群</strong>
+                  <small><span class="online-dot" aria-hidden="true"></span> 3 人 · 对方正在输入…</small>
+                </div>
+                <span class="chat-more" aria-hidden="true">···</span>
+              </div>
+
+              <div class="chat-body">
+                <p class="chat-time">今天 14:27</p>
+                <div class="msg msg-them msg-1">
+                  <span class="mini-avatar" aria-hidden="true">学</span>
+                  <p>学妹，有个线上兼职，动动手指日入 300，做吗？</p>
+                </div>
+                <div class="msg msg-me msg-2"><p>真的假的？</p></div>
+                <div class="msg msg-them msg-3">
+                  <span class="mini-avatar" aria-hidden="true">学</span>
+                  <p>先垫 299 激活任务，做完连本带利返你。名额只剩两个了。</p>
+                </div>
+                <div class="risk-callout msg-4">
+                  <span class="risk-icon" aria-hidden="true">!</span>
+                  <span><strong>高危组合</strong> 垫付 + 返利 + 限时名额</span>
+                </div>
+              </div>
+
+              <div class="chat-foot">
+                <span aria-hidden="true">转账前，先停 10 秒…</span>
+                <span class="send-btn" aria-hidden="true">↑</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-advice">
+            <span class="advice-label">清醒提示</span>
+            <p>先交钱的兼职，<br><strong>直接按坑处理。</strong></p>
+            <span class="advice-arrow" aria-hidden="true">↖</span>
+          </div>
+        </div>
+      </div>
+
+      <a class="hero-scroll" href="#playbook">
+        <span>继续往下看</span>
+        <span class="scroll-line" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- Ticker -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>不轻信</span><i>✳</i><span>不透露</span><i>✳</i><span>不转账</span><i>✳</i><span>多核实</span><i>✳</i>
+        <span>不共享屏幕</span><i>✳</i><span>不点陌生链接</span><i>✳</i><span>96110 来电要接</span><i>✳</i>
+        <span>不轻信</span><i>✳</i><span>不透露</span><i>✳</i><span>不转账</span><i>✳</i><span>多核实</span><i>✳</i>
+        <span>不共享屏幕</span><i>✳</i><span>不点陌生链接</span><i>✳</i><span>96110 来电要接</span><i>✳</i>
+      </div>
+    </div>
+
+    <!-- Playbook -->
+    <section class="section playbook" id="playbook" aria-labelledby="playbookTitle">
+      <div class="section-head reveal">
+        <div class="section-kicker"><span>01</span> 先看懂剧本</div>
+        <div class="section-head-row">
+          <h2 id="playbookTitle">骗局，<br>都是同一个剧本。</h2>
+          <p>换的只是头像、话术和场景。<br>骗子真正做的，是把你从“能思考”推到“来不及想”。</p>
+        </div>
+      </div>
+
+      <ol class="play-steps" aria-label="诈骗的五个步骤">
+        <li class="play-step reveal">
+          <span class="step-num">01</span>
+          <span class="step-icon" aria-hidden="true">◎</span>
+          <h3>找钩子</h3>
+          <p>兼职日结、低价门票、内部渠道——先用你此刻最想要的东西，撬开一道缝。</p>
+        </li>
+        <li class="play-step reveal">
+          <span class="step-num">02</span>
+          <span class="step-icon" aria-hidden="true">◈</span>
+          <h3>建信任</h3>
+          <p>工牌、订单截图、校园群、学长学姐的身份，全套包装。甚至会先给你一点甜头。</p>
+        </li>
+        <li class="play-step reveal">
+          <span class="step-num">03</span>
+          <span class="step-icon" aria-hidden="true">⌁</span>
+          <h3>隔离你</h3>
+          <p>让你别告诉室友和家长，拉进小群，催你保持通话、开会议、共享屏幕。</p>
+        </li>
+        <li class="play-step reveal">
+          <span class="step-num">04</span>
+          <span class="step-icon" aria-hidden="true">↯</span>
+          <h3>催转账</h3>
+          <p>限时名额、账户冻结、马上起诉——用紧迫感，抢走你本可以用来核实的时间。</p>
+        </li>
+        <li class="play-step reveal">
+          <span class="step-num">05</span>
+          <span class="step-icon" aria-hidden="true">∅</span>
+          <h3>消失，或再骗一次</h3>
+          <p>拉黑、关平台；也可能换个“追款律师”“网警”，对着急的你进行二次收割。</p>
+        </li>
+      </ol>
+
+      <div class="truth-banner reveal">
+        <span class="truth-mark" aria-hidden="true">!</span>
+        <p>骗子不怕你聪明，<strong>只怕你停下来核实。</strong></p>
+        <span class="truth-note">任何让你“现在立刻马上”转账的人，都值得怀疑。</span>
+      </div>
+    </section>
+
+    <!-- Scam gallery -->
+    <section class="section scams" id="scams" aria-labelledby="scamsTitle">
+      <div class="section-head reveal">
+        <div class="section-kicker"><span>02</span> 骗局图鉴</div>
+        <div class="section-head-row">
+          <h2 id="scamsTitle">13 类高频骗局，<br>逐条拆穿。</h2>
+          <p>别背话术。记住每一类骗局里，<br>那条让你该立刻停下来的“红线”。</p>
+        </div>
+      </div>
+
+      <div class="gallery-tools reveal">
+        <div class="filter-chips" id="filterChips" role="group" aria-label="按骗局类型筛选">
+          <button class="chip is-active" type="button" data-filter="all" aria-pressed="true">全部 <span>13</span></button>
+          <button class="chip" type="button" data-filter="parttime" aria-pressed="false">兼职赚钱</button>
+          <button class="chip" type="button" data-filter="identity" aria-pressed="false">冒充身份</button>
+          <button class="chip" type="button" data-filter="shopping" aria-pressed="false">网购交易</button>
+          <button class="chip" type="button" data-filter="romance" aria-pressed="false">情感投资</button>
+          <button class="chip" type="button" data-filter="campus" aria-pressed="false">校园生活</button>
+        </div>
+        <label class="search-box" for="scamSearch">
+          <span class="search-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">搜索骗局</span>
+          <input type="search" id="scamSearch" placeholder="搜“刷单”“退款”“校园贷”…" autocomplete="off">
+        </label>
+      </div>
+
+      <p class="result-count" id="resultCount" aria-live="polite">共 13 条</p>
+      <div class="scam-grid" id="scamGrid"></div>
+      <div class="empty-state" id="scamEmpty" hidden>
+        <span aria-hidden="true">⌕</span>
+        <h3>没找到这一类骗局</h3>
+        <p>换个关键词试试，或者直接看全部。骗子可不会只按分类出牌。</p>
+        <button class="btn btn-ghost btn-small" id="resetFilters" type="button">查看全部</button>
+      </div>
+    </section>
+
+    <!-- Scanner -->
+    <section class="section scanner-section" id="scanner" aria-labelledby="scannerTitle">
+      <div class="scanner-grid">
+        <div class="scanner-copy reveal">
+          <div class="section-kicker"><span>03</span> 可疑消息体检</div>
+          <h2 id="scannerTitle">这句话，<br>像不像骗子<br>说的？</h2>
+          <p class="scanner-lede">把可疑的聊天记录、短信或招聘话术粘贴进来，做一次快速风险体检。系统会找出其中的高危信号，并告诉你下一步怎么核实。</p>
+
+          <ul class="scanner-points">
+            <li><span aria-hidden="true">01</span> 本地分析，不上传、不保存</li>
+            <li><span aria-hidden="true">02</span> 不收集手机号 / 学号，不接第三方统计</li>
+            <li><span aria-hidden="true">03</span> 识别垫付、共享屏幕、安全账户等话术</li>
+            <li><span aria-hidden="true">04</span> 只能帮你多留个心眼，不能代替警方判断</li>
+          </ul>
+
+          <div class="examples">
+            <span class="examples-label">没想好贴什么？试试：</span>
+            <div class="example-chips" id="exampleChips">
+              <button type="button" class="example-chip" data-example="parttime">刷单兼职</button>
+              <button type="button" class="example-chip" data-example="refund">冒充客服</button>
+              <button type="button" class="example-chip" data-example="police">冒充公检法</button>
+              <button type="button" class="example-chip" data-example="friend">熟人借钱</button>
+              <button type="button" class="example-chip" data-example="safe">正常通知</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="scanner-card reveal">
+          <div class="scanner-head">
+            <span class="scanner-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="scanner-title">消息体检仪</span>
+            <span class="local-badge"><span aria-hidden="true"></span> 本地运行</span>
+          </div>
+
+          <div class="scanner-input-wrap">
+            <label class="visually-hidden" for="scanInput">粘贴可疑消息</label>
+            <textarea id="scanInput" maxlength="2000" rows="7" placeholder="例如：我是京东客服，您的订单误开成代理商，请下载会议 App 共享屏幕，把余额转到安全账户验证……" autocomplete="off" autocapitalize="off" spellcheck="false"></textarea>
+            <div class="scanner-meta">
+              <span id="charCount">0 / 2000</span>
+              <button class="text-btn" id="clearScan" type="button">清空</button>
+            </div>
+          </div>
+
+          <div class="scanner-actions">
+            <button class="btn btn-primary scan-btn" id="scanBtn" type="button">
+              <span class="scan-btn-icon" aria-hidden="true">⌕</span>
+              开始体检
+            </button>
+            <span class="privacy-note"><span aria-hidden="true">◉</span> 内容不会离开你的浏览器</span>
+          </div>
+
+          <div class="scan-result" id="scanResult" aria-live="polite" hidden></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quiz -->
+    <section class="section quiz-section" id="quiz" aria-labelledby="quizTitle">
+      <div class="section-head reveal">
+        <div class="section-kicker"><span>04</span> 反诈自测</div>
+        <div class="section-head-row">
+          <h2 id="quizTitle">6 个场景，<br>测测你的清醒值。</h2>
+          <p>没有说教，只有真实可能发生在你身上的瞬间。<br>选完立刻看解析，看看自己会在哪一步心软。</p>
+        </div>
+      </div>
+
+      <div class="quiz-layout">
+        <aside class="quiz-aside reveal">
+          <div class="quiz-aside-card">
+            <span class="aside-badge">怎么玩</span>
+            <ul>
+              <li><strong>6</strong> 道单选题</li>
+              <li>大约需要 <strong>3</strong> 分钟</li>
+              <li>没有排名，不收集手机号 / 学号</li>
+              <li>结果只在本地计算</li>
+              <li>选错不丢人，真遇上才要命</li>
+            </ul>
+          </div>
+          <blockquote class="quiz-quote">
+            “骗子最喜欢的，<br>不是贪心的人，<br>而是<strong>不好意思拒绝</strong>的人。”
+          </blockquote>
+        </aside>
+
+        <div class="quiz-card reveal" id="quizCard">
+          <div class="quiz-top">
+            <span id="quizStep">第 1 / 6 题</span>
+            <span class="quiz-tag" id="quizTag">兼职刷单</span>
+          </div>
+          <div class="quiz-track" aria-hidden="true"><span id="quizProgress"></span></div>
+          <div id="quizBody" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Emergency -->
+    <section class="section emergency-section" id="emergency" aria-labelledby="emergencyTitle">
+      <div class="emergency-grid">
+        <div class="emergency-main">
+          <div class="section-kicker section-kicker-light reveal"><span>05</span> 紧急止损</div>
+          <h2 id="emergencyTitle" class="reveal">真转出去了？<br>按这 3 步走。</h2>
+          <p class="emergency-lede reveal">顺序不能反：<strong>先止付 → 再报警 → 留证据</strong>。先别自责，现在开始。</p>
+
+          <div class="emergency-flow-note reveal" aria-label="止损流程顺序">
+            <span class="flow-locked">顺序别反</span>
+            <span>01 先止付</span>
+            <i aria-hidden="true">→</i>
+            <span>02 再报警</span>
+            <i aria-hidden="true">→</i>
+            <span>03 留证据</span>
+          </div>
+
+          <div class="mobile-callbar reveal" aria-label="紧急联系电话">
+            <a class="mobile-call" href="tel:96110">
+              <span>先止付</span>
+              <strong>96110</strong>
+              <small>或银行 / 支付客服</small>
+            </a>
+            <a class="mobile-call mobile-call-police" href="tel:110">
+              <span>再报警</span>
+              <strong>110</strong>
+              <small>说清转账信息</small>
+            </a>
+          </div>
+
+          <div class="checklist-panel reveal">
+            <div class="checklist-head">
+              <span>按这个顺序来，别跳步</span>
+              <span id="checklistCount" aria-live="polite">0 / 3 已完成</span>
+            </div>
+            <div class="checklist-track" aria-hidden="true"><span id="checklistBar"></span></div>
+
+            <div class="checklist" id="checklist">
+              <label class="check-item" data-check="stop-payment">
+                <input type="checkbox" data-step="stop-payment">
+                <span class="check-box" aria-hidden="true"></span>
+                <span class="check-copy">
+                  <strong><span>01</span> 先止付：打 96110 或银行客服</strong>
+                  <small>立刻拨打 96110，或银行卡背面 / 支付平台官方客服，说明已经转账，申请止付、冻结。</small>
+                </span>
+              </label>
+              <label class="check-item" data-check="police">
+                <input type="checkbox" data-step="police">
+                <span class="check-box" aria-hidden="true"></span>
+                <span class="check-copy">
+                  <strong><span>02</span> 再报警：拨打 110</strong>
+                  <small>说清转账时间、金额、对方账号 / 电话和平台，按警方指引操作。不要在网上搜“追款”。</small>
+                </span>
+              </label>
+              <label class="check-item" data-check="evidence">
+                <input type="checkbox" data-step="evidence">
+                <span class="check-box" aria-hidden="true"></span>
+                <span class="check-copy">
+                  <strong><span>03</span> 留证据：别删记录，别拉黑对方</strong>
+                  <small>保留聊天记录、通话记录、对方账号、转账截图和 App 名称。不要删除记录，不要拉黑对方。</small>
+                </span>
+              </label>
+            </div>
+
+            <div class="checklist-warning">
+              <strong>这几件事别做</strong>
+              <span>不删记录</span>
+              <span>不拉黑对方</span>
+              <span>不再转“解冻费”</span>
+            </div>
+
+            <div class="checklist-foot">
+              <button class="btn btn-yellow btn-small" id="copyReport" type="button">复制报警要素</button>
+              <button class="text-btn text-btn-light" id="resetChecklist" type="button">重置流程</button>
+              <span class="checklist-hint">勾选状态会保存在本机</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="emergency-aside reveal">
+          <div class="hotline-card">
+            <span class="hotline-label">按这个顺序打</span>
+            <a class="hotline-main" href="tel:96110">
+              <span>96110</span>
+              <small>第一步 · 反诈专线 / 申请止付</small>
+            </a>
+            <div class="hotline-bank">
+              <span>银行 / 支付客服</span>
+              <small>卡背面号码 · 官方 App · 申请止付</small>
+            </div>
+            <a class="hotline-sub" href="tel:110">
+              <span>110</span>
+              <small>第二步 · 报警</small>
+            </a>
+            <p class="hotline-note">先止付，再报警。96110 不会让你转账，也不会索要验证码。</p>
+          </div>
+
+          <div class="aftercare-card">
+            <span class="aftercare-icon" aria-hidden="true">♡</span>
+            <h3>如果你正在害怕</h3>
+            <p>被骗不是“蠢”，是被专业团队设计了情绪。先停下来，告诉辅导员或家人，找一个你信任的人陪你处理。</p>
+            <p class="aftercare-strong">你不需要一个人扛。</p>
+          </div>
+
+          <div class="extra-actions">
+            <h3>如果点过链接 / 开过共享</h3>
+            <ul>
+              <li>立刻修改银行、支付、社交账号密码</li>
+              <li>关闭屏幕共享，检查是否安装了陌生 App</li>
+              <li>开启转账延迟到账，留意异常登录提醒</li>
+              <li>安装国家反诈中心 App，开启来电预警</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Myths -->
+    <section class="section myths" id="myths" aria-labelledby="mythsTitle">
+      <div class="section-head reveal">
+        <div class="section-kicker"><span>06</span> 最后提醒</div>
+        <div class="section-head-row">
+          <h2 id="mythsTitle">四个最危险的<br>“我以为”。</h2>
+          <p>骗子最擅长利用的，不是你的粗心，<br>而是你觉得“这种事不会轮到我”。</p>
+        </div>
+      </div>
+
+      <div class="myth-grid">
+        <article class="myth-card reveal">
+          <span class="myth-index">01</span>
+          <p class="myth-quote">“我没钱，<br>骗子骗不到我。”</p>
+          <div class="myth-reality">
+            <span>现实</span>
+            <p>他们会先让你借网贷、开额度，再骗走贷款。没存款，不等于没额度。</p>
+          </div>
+        </article>
+        <article class="myth-card reveal">
+          <span class="myth-index">02</span>
+          <p class="myth-quote">“我学历高，<br>不会被骗。”</p>
+          <div class="myth-reality">
+            <span>现实</span>
+            <p>诈骗攻击的是情绪，不是智商。害怕、心急、心动的时候，谁都可能短路。</p>
+          </div>
+        </article>
+        <article class="myth-card reveal">
+          <span class="myth-index">03</span>
+          <p class="myth-quote">“不点链接<br>就没事。”</p>
+          <div class="myth-reality">
+            <span>现实</span>
+            <p>屏幕共享、验证码、人脸识别，有时比一个链接更危险。别让陌生人看见你的手机。</p>
+          </div>
+        </article>
+        <article class="myth-card reveal">
+          <span class="myth-index">04</span>
+          <p class="myth-quote">“被骗太丢人，<br>我先自己追回。”</p>
+          <div class="myth-reality">
+            <span>现实</span>
+            <p>越晚说，越难止付。网上主动找上门的“追款律师”，多半是第二次诈骗。</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="no-blame reveal">
+        <span aria-hidden="true">✳</span>
+        <p><strong>被骗不是你的错，骗子才是错的。</strong><br>沉默才会让损失变大。说出来，是止损的第一步。</p>
+      </div>
+    </section>
+
+    <!-- Final -->
+    <section class="final" aria-labelledby="finalTitle">
+      <div class="final-inner">
+        <p class="eyebrow">LAST WORD</p>
+        <h2 id="finalTitle">把这页转给<br>你真正关心的人。</h2>
+        <p class="final-lede">防骗不是背口诀，是在要转账的那一刻，愿意停下来多问一句。</p>
+
+        <div class="final-actions">
+          <button class="btn btn-primary" id="shareBtn" type="button">复制分享文案 <span aria-hidden="true">↗</span></button>
+          <button class="btn btn-ghost" id="printBtn" type="button">打印 / 存为 PDF</button>
+        </div>
+
+        <div class="three-questions">
+          <span class="three-label">转账前，只问三句</span>
+          <ol>
+            <li><span>01</span> 我认识电话那头的人吗？<em>换个渠道核实。</em></li>
+            <li><span>02</span> 我为什么现在、立刻、必须转？<em>越急越要停。</em></li>
+            <li><span>03</span> 如果这笔钱回不来，我承受得起吗？<em>别用借贷去赌。</em></li>
+          </ol>
+        </div>
+      </div>
+      <div class="final-mark" aria-hidden="true">醒</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="brand-mark" aria-hidden="true">醒</span>
+        <div><strong>清醒点</strong><p>大学生防骗指南</p></div>
+      </div>
+      <p class="footer-line">不轻信 · 不透露 · 不转账 · 多核实</p>
+      <button class="back-top" id="backTop" type="button">回到顶部 <span aria-hidden="true">↑</span></button>
+    </div>
+    <div class="privacy-strip" aria-label="隐私承诺">
+      <span class="privacy-strip-label">隐私承诺</span>
+      <span>不收集手机号 / 学号</span>
+      <span>无第三方统计</span>
+      <span>自测结果仅本地计算</span>
+      <span>无 Cookie</span>
+      <span>离线可看</span>
+    </div>
+    <div class="footer-bottom">
+      <p>这是一个公益科普页：我们不收集手机号 / 学号，不接第三方统计；消息体检和自测都在你的浏览器里算，止损进度只存在本机 localStorage。内容参考《中华人民共和国反电信网络诈骗法》、国家反诈中心公开资料整理；真遇到案子，以警方判断为准。<br><span class="footer-source-note">关于资料：每类骗局都标了公开来源和发布时间；站内不写无法溯源的统计比例。来源检索与核对于 2026-11-07。</span></p>
+      <p>遇到诈骗：<a href="tel:96110">96110</a> · <a href="tel:110">110</a></p>
+    </div>
+  </footer>
+
+  <!-- Scam detail modal -->
+  <div class="modal" id="scamModal" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" type="button" aria-label="关闭详情">
+        <span aria-hidden="true">×</span>
+      </button>
+      <div class="modal-head">
+        <div class="modal-tags">
+          <span class="modal-category" id="modalCategory"></span>
+          <span class="modal-index" id="modalIndex"></span>
+        </div>
+        <h2 id="modalTitle"></h2>
+        <p id="modalTagline"></p>
+        <div class="modal-source" id="modalSource"></div>
+      </div>
+      <div class="modal-body">
+        <div class="modal-quote">
+          <span class="modal-label">他们可能会说</span>
+          <blockquote id="modalQuote"></blockquote>
+        </div>
+        <div class="modal-section">
+          <h3><span class="dot dot-orange" aria-hidden="true"></span> 套路拆解</h3>
+          <ol id="modalBreakdown"></ol>
+        </div>
+        <div class="modal-section modal-danger">
+          <h3><span class="dot dot-red" aria-hidden="true"></span> 看到这些，立刻停</h3>
+          <ul id="modalSignals"></ul>
+        </div>
+        <div class="modal-section modal-safe">
+          <h3><span class="dot dot-green" aria-hidden="true"></span> 正确做法</h3>
+          <ul id="modalActions"></ul>
+        </div>
+      </div>
+      <div class="modal-foot">
+        <span>记住：任何要求你“别告诉别人”的操作，都值得警惕。</span>
+        <button class="btn btn-primary btn-small" type="button" data-close-modal>我知道了</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile nav backdrop -->
+  <div class="nav-backdrop" id="navBackdrop"></div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <noscript>
+    <div class="noscript">互动功能需要开启 JavaScript；文字内容仍然能看。紧急情况直接打 96110 或 110。</div>
+  </noscript>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
