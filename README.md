@@ -58,7 +58,7 @@ campus-anti-fraud/
 └─ README.md
 ```
 
-> `og:image` 当前使用相对路径 `og-cover.png`。如果发布平台要求绝对 URL，上线后替换为 `https://你的域名/og-cover.png` 即可。
+> 当前上线地址：<https://thief-ban.github.io/campus-anti-fraud/>。`og:image`、`twitter:image` 和 canonical 已使用该绝对地址。
 
 ## 想改内容？
 
